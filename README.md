@@ -4,7 +4,7 @@
 
 "mySGuide" is a final career project that provides a mobile application managed by a web page.
 
-It works by using geolocalizacion. Depending of the position of the user, the application sends push notifications informing the user of nearby places to visit in the Segovia city.
+It works by using geolocalizacion. Depending of the position of the user, the application sends push notifications informing the user of nearby places to visit the Segovia city.
 
 I'ts a [MEAN](http://mean.io/) web application using [Apache Cordova](https://cordova.apache.org/) . All information was obtained from the following page [Turismo de Segovia](http://www.turismodesegovia.com/).
 
