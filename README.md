@@ -13,7 +13,13 @@ I'ts a [MEAN](http://mean.io/) web application using [Apache Cordova](https://co
 
 Prerequisites:
 
-- [Node](https://nodejs.org/es/)
+- [Apache Cordova](https://cordova.apache.org/)
+
+Instalation: 
+
+1. Clone or download the repo
+2. Inside of the repo, run
+``cordova build``
 
 
 ## Oficial Documentation
