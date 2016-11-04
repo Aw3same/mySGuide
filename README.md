@@ -29,4 +29,4 @@ Instalation:
 
 ## Author
 
-Made by Ángel Barroso Sanz from  March to July 2016
+Made by Ángel Barroso Sanz@2016
