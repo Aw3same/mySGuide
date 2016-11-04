@@ -18,7 +18,8 @@ Prerequisites:
 Instalation: 
 
 1. Clone or download the repo
-2. Inside of the repo, run ``cordova build``
+2. Inside of the repo, run ``cordova build android``
+3. After building, run ``cordova run android``
 
 
 ## Oficial Documentation
