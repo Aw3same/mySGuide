@@ -1,0 +1,46 @@
+<!--Principio de información-->
+<center><a href="#/"  >Volver a inicio</a> | <a href="#/museums"  >Ir a guía</a></center>
+<style>
+img{
+  border-radius: 100%;
+	border: solid 1px black;
+	width: 300px;
+	height: 300px;
+  margin-top: 50px;
+}
+
+.title{
+	font-variant: small-caps;
+	text-align: center;
+	font-size:30px;
+}
+.text{
+	width: 90%;
+	margin-left: 22px;
+	text-align: center;
+}
+</style>
+<div ng-controller="museoController"
+  <div align="center">
+    <img  src="https://mysguide.herokuapp.com/museos/image/{{ infoMuseo._id }}" >
+  </div>
+    <br>
+    <p class="title"> {{ infoMuseo.Nombre }}</p>
+    <hr>
+  <div class="text">
+    <p style="font-size:16px;">{{ infoMuseo.Descripcion }}</p>
+    <hr>
+    <br><br>
+  </div>
+</div>
+
+<!-- content-Get-in-touch -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+
+<script type="text/javascript">
+									$(document).ready(function() {
+										$().UItoTop({ easingType: 'easeOutQuart' });
+									});
+</script>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>

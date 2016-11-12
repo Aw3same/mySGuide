@@ -1,0 +1,98 @@
+<script>
+document.addEventListener("backbutton", onBackKeyDown, false); //Listen to the User clicking on the back button
+
+function onBackKeyDown(e) {
+    console.log("en back");
+    e.preventDefault();
+    //navigator.app.exitApp();
+    navigator.notification.confirm("Estás seguro que deseas salir?", onConfirm, "Confirmación", "No,Sí");
+    // Prompt the user with the choice
+}
+function onConfirm(button) {
+    if(button==1){//If User selected No, then we just do nothing
+        return;
+    }else{
+        navigator.app.exitApp();// Otherwise we quit the app.
+    }
+}
+</script>
+<style>
+.banner-top-grids {
+    margin-top: 2em;
+}
+</style>
+
+
+<div class="banner-top-grids">
+  <div class="top-grids">
+    <!--Primer ban Monumentos-->
+    <div class="col-md-6 banner-grid">
+      <a href="#guide"><!--LINK-->
+      <div class="banner-left-grid blue">
+        <div class="banner-left-icon">
+          <div class="services-icon">
+            <span class="glyphicon glyphicon-tower" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="banner-grid-info">
+          <h3>Monumentos</h3>
+          <p>Entra y descubre rincones que jamás habrías imaginado</p>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </a>
+    </div>
+    <!--Segundo ban Leyendas-->
+    <div class="col-md-6 banner-grid">
+      <a href="#legends"><!--LINK-->
+      <div class="banner-left-grid green">
+        <div class="banner-left-icon">
+          <div class="services-icon">
+            <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="banner-grid-info">
+          <h3>Leyendas</h3>
+          <p>¿Serán ciertas?</p>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </a>
+    </div>
+    <!--Tercer ban museos-->
+
+    <div class="col-md-6 banner-grid">
+      <a href="#museums"><!--LINK-->
+      <div class="banner-left-grid blue">
+        <div class="banner-left-icon">
+          <div class="services-icon">
+            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="banner-grid-info">
+          <h3>Museos</h3>
+          <p>Centro de cultura</p>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </a>
+    </div>
+    <!--Cuarto ban festivales-->
+    <div class="col-md-6 banner-grid">
+      <a href="#festivals"><!--LINK-->
+      <div class="banner-left-grid green">
+        <div class="banner-left-icon">
+          <div class="services-icon">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="banner-grid-info">
+          <h3>Festivales</h3>
+          <p>Un poco de diversión nunca viene mal</p>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </a>
+    </div>
+  </div>
+</div>

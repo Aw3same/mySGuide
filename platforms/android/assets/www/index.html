@@ -1,0 +1,71 @@
+<!-- index.html -->
+    <!DOCTYPE html>
+
+    <!-- define angular app -->
+    <html ng-app="myApp">
+    <head>
+      <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN -->
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+      <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+      <link href="css/style.css" rel='stylesheet' type='text/css' />
+      <script src="js/jquery-1.11.1.min.js"> </script>
+      <script src="js/bootstrap.js"></script>
+      <script type="text/javascript" src="cordova.js"></script>
+
+      <!-- SPELLS -->
+      <!-- load angular via CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+      <script src="script.js"></script>
+      <script src="js/ng-map.min.js"></script>
+
+    	</script>
+      <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      </style>
+    </head>
+
+        <!-- HEADER-->
+        <!-- header -->
+          <div class="header">
+            <div class="container">
+              <div class="logo">
+                <h1><a href="#/">myS<span>Guide</span></a></h1>
+              </div>
+              <div class="top-nav">
+                <nav class="navbar navbar-default">
+                    <div class="clearfix"> </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          <!-- //header -->
+
+    <!-- define angular controller -->
+    <body ng-controller="mainController">
+      <script>
+      console.log("EN INICIOOOOO");
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDro9WMsSyL6RDfKqB0uI4cmrb_MdaHIiU&signed_in=true&libraries=geometry"
+          async defer>
+      </script>
+
+
+
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main">
+
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div ng-view></div>
+
+    </div>
+
+  </body>
+ </html>

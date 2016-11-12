@@ -1,0 +1,44 @@
+<!--Principio de la guia-->
+<style>
+img.alineadoTextoImagenCentro{
+	vertical-align: middle;
+	width: 107px;
+	height: 107px;
+	border-radius: 100%;
+	margin-left: 25px;
+	border: solid 1px black;
+	margin-top: 30px;
+}
+img.alineadoTextoImagenCentro:hover{
+	opacity: 0.7;
+
+}
+
+.etiqueta{
+	margin-left: 30px;
+	font-variant: small-caps;
+	font-size: 20px;
+}
+.box{
+			border-bottom: 1px solid #333;
+	    padding-top: 25px;
+	    height: 162px;
+}
+</style>
+<center><a href="#/" > | Volver a inicio |</a></center>
+<!-- /{{monumento._id}}-->
+<div class="box" ng-controller="legendController" style="padding-top: 0;margin-top: -12px;" ng-repeat="leyenda in leyendas">
+<a ng-href="#legends/{{leyenda._id}}" ><p><img class="alineadoTextoImagenCentro" ng-src="https://mysguide.herokuapp.com/leyendas/image/{{ leyenda._id }}" /><span class="etiqueta">{{ leyenda.Nombre }}</span></p></a>
+</div>
+
+
+<!-- content-Get-in-touch -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+
+<script type="text/javascript">
+									$(document).ready(function() {
+										$().UItoTop({ easingType: 'easeOutQuart' });
+									});
+</script>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>

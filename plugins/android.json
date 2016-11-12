@@ -1,0 +1,32 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "es.android.segotour"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "461634391597",
+            "PACKAGE_NAME": "es.android.segotour"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "es.android.segotour"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "es.android.segotour"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "es.android.segotour"
+        },
+        "cordova-plugin-app-event": {
+            "PACKAGE_NAME": "es.android.segotour"
+        }
+    }
+}
